@@ -126,7 +126,7 @@ python3 JTR-CVE-2025-57819.py <TARGET_IP> <YOUR_IP> <PORT>
 
 ## PoC
 
-![PoC Screenshot](./FreePBX_PoC.png)
+![PoC Screenshot](./FreePBX-PoC.png)
 
 ---
 
