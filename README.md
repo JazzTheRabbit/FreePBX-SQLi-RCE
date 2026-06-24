@@ -192,7 +192,7 @@ This tool is provided for educational and authorized security testing only. Unau
 
 **JazzTheRabbit**
 - GitHub: [@JazzTheRabbit](https://github.com/JazzTheRabbit)
-- HackTheBox: [@JazzTheRabbit](https://www.hackthebox.com/home/users/profile/JazzTheRabbit)
+- HackTheBox: [@JazzTheRabbit](https://github.com/JazzTheRabbit)
 - YouTube: [JazzTheRabbit](https://www.youtube.com/@JazzTheRabbit)
 
 ## License
