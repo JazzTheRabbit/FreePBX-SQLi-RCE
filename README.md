@@ -3,7 +3,9 @@
 ![Python](https://img.shields.io/badge/Python-3.6+-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-Exploitation proof of concept for CVE-2025-57819, a critical unauthenticated SQL injection vulnerability in FreePBX that allows remote code execution.
+**⚠️ Educational & Security Research Only - See Legal Notice Below**
+
+Exploitation proof of concept for CVE-2025-57819, a critical unauthenticated SQL injection vulnerability in FreePBX that allows remote code execution. This PoC is published **after official patches were released** for security research and authorized testing purposes only.
 
 ## Overview
 
@@ -138,20 +140,22 @@ If incron is not available on the target, the script spawns a reverse shell as t
 
 ## PoC
 
-![PoC Demonstration](./images/poc.gif)
+<video width="100%" controls>
+  <source src="./PoC_Video.mp4" type="video/mp4">
+</video>
 
 ---
 
 ## Affected Versions
 
-| Version | Vulnerable | Patched |
-|---------|-----------|---------|
-| 15.0.0 - 15.0.65 | ✓ | ✗ |
-| 15.0.66+ | ✗ | ✓ |
-| 16.0.0 - 16.0.88 | ✓ | ✗ |
-| 16.0.89+ | ✗ | ✓ |
-| 17.0.0 - 17.0.2 | ✓ | ✗ |
-| 17.0.3+ | ✗ | ✓ |
+| Version | Status |
+|---------|--------|
+| 15.0.0 - 15.0.65 | Vulnerable |
+| 15.0.66+ | Patched |
+| 16.0.0 - 16.0.88 | Vulnerable |
+| 16.0.89+ | Patched |
+| 17.0.0 - 17.0.2 | Vulnerable |
+| 17.0.3+ | Patched |
 
 ---
 
@@ -176,15 +180,35 @@ Upgrade to patched versions: 15.0.66+, 16.0.89+, or 17.0.3+
 
 ## Legal Notice
 
-⚠️ **Disclaimer**
+⚠️ **DISCLAIMER**
 
-This tool is provided for educational and authorized security testing only. Unauthorized access to computer systems is illegal.
+This proof of concept is provided **SOLELY FOR AUTHORIZED SECURITY TESTING AND EDUCATIONAL PURPOSES**. The author assumes no liability for misuse or damage caused by this tool.
 
-- Only use on systems you own or have explicit written permission to test
-- Do not use for malicious purposes or unauthorized access
-- Users are responsible for compliance with applicable laws
-- Obtain written authorization before testing
-- Report findings responsibly
+**YOU MUST COMPLY WITH:**
+- Computer Fraud and Abuse Act (CFAA) and equivalent laws in your jurisdiction
+- Only test systems you own or have explicit written authorization to test
+- Obtain written permission before any security testing
+- Responsible disclosure practices
+- Privacy and data protection regulations (GDPR, CCPA, etc.)
+
+**PROHIBITED USES:**
+- Unauthorized access to computer systems
+- Penetration testing without written consent
+- Disruption of services or data theft
+- Any malicious or illegal activity
+
+**LIABILITY WAIVER:**
+The author is not responsible for:
+- Unauthorized access or criminal charges
+- Damage to systems or data loss
+- Legal consequences of misuse
+- Violations of computer fraud laws
+
+**This vulnerability is:**
+-  Publicly disclosed (CVE-2025-57819)
+-  Patches publicly available
+-  Published for security research only
+-  Shared responsibly after patch release
 
 ---
 
@@ -192,7 +216,7 @@ This tool is provided for educational and authorized security testing only. Unau
 
 **JazzTheRabbit**
 - GitHub: [@JazzTheRabbit](https://github.com/JazzTheRabbit)
-- HackTheBox: [@JazzTheRabbit](https://github.com/JazzTheRabbit)
+- HackTheBox: [@JazzTheRabbit](https://www.hackthebox.com/home/users/profile/JazzTheRabbit)
 - YouTube: [JazzTheRabbit](https://www.youtube.com/@JazzTheRabbit)
 
 ## License
