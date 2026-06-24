@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.6+-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**⚠️ Educational & Security Research Only - See Legal Notice Below**
+**Educational & Security Research Only - See Legal Notice Below**
 
 Exploitation proof of concept for CVE-2025-57819, a critical unauthenticated SQL injection vulnerability in FreePBX that allows remote code execution. This PoC is published **after official patches were released** for security research and authorized testing purposes only.
 
